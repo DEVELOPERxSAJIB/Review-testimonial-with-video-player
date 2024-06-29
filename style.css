@@ -5,12 +5,12 @@ body {
 }
 
 .testimonial-section {
-  width: 90%;
+  width: 85%;
   margin: 50px auto;
-  background-color: #ffffff26;
+  background-color: #808E9B21;
   padding: 40px 60px;
   border-radius: 15px;
-  border: 1px solid #ffffff6c;
+  border: 1px solid rgba(128, 142, 155, 0.409)1;
 }
 
 .testimonial-section .testimonial-wrapper {
@@ -20,8 +20,8 @@ body {
   align-items: center;
 }
 
-.main-review {
-}
+/* .main-review {
+} */
 
 .main-review .text-review h3 {
   font-size: 50px;
@@ -93,10 +93,20 @@ body {
   border-radius: 18px;
   font-size: 22px;
   font-weight: bold;
-  color: #fff;
+  color: #fffa65;
+  /* background-color: #00000031; */
+  background-color: #fff;
+  border: 1px solid #ffffff70;
 }
 
-.swiper-slide:nth-child(1n) {
+.swiper-slide iframe
+.swiper-slide video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .swiper-slide:nth-child(1n) {
   background-color: rgb(206, 17, 17);
 }
 
@@ -134,13 +144,13 @@ body {
 
 .swiper-slide:nth-child(10n) {
   background-color: rgb(54, 94, 77);
-}
+} */
 
 .next-prev-btn {
   text-align: right;
   margin-top: 20px;
 }
-.next-prev-btn  button {
+.next-prev-btn button {
   cursor: pointer;
   border: none;
   background-color: #ffffff27;
@@ -149,3 +159,264 @@ body {
   border-radius: 50px;
   color: #fff;
 }
+
+@media screen and (max-width: 1280px) {
+  .testimonial-section {
+    width: 80%;
+  }
+
+  .main-review .text-review h3 {
+    font-size: 40px;
+    line-height: 50px;
+    top: 70px;
+    max-width: 500px;
+  }
+
+  .swiper {
+    width: 220px;
+    height: 420px;
+  }
+
+  .video-revs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5.5rem;
+  }
+
+  .next-prev-btn {
+    text-align: right;
+    margin-top: 20px;
+    padding-right: 15%;
+  }
+  .next-prev-btn button {
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff27;
+    padding: 15px 25px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .testimonial-section {
+    width: 75%;
+    margin: 40px auto;
+  }
+  .main-review .profile {
+    position: absolute;
+    top: 5px;
+    gap: 10px;
+  }
+  .main-review .profile .img-area {
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .main-review .profile .name-area span {
+    font-size: 17px;
+    font-weight: 400;
+    color: #ffffffb4;
+    font-family: "Poppins", sans-serif;
+    padding-left: 5px;
+  }
+
+  .main-review .profile .name-area p {
+    margin: 0;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    background: #fffa65;
+    color: #030303;
+    padding: 1px 5px;
+    border-radius: 29px;
+  }
+  .main-review .text-review h3 {
+    font-size: 30px;
+    line-height: 40px;
+    position: absolute;
+    top: 60px;
+    max-width: 350px;
+  }
+
+  .swiper {
+    width: 220px;
+    height: 400px;
+  }
+
+  .video-revs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .testimonial-section {
+    width: 80%;
+    margin: 40px auto;
+  }
+
+  .testimonial-section .testimonial-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .testimonial-section .testimonial-wrapper .main-review {
+    height: 30vh;
+    width: 100%;
+  }
+  .testimonial-section .testimonial-wrapper .video-revs {
+    width: 100% !important;
+  }
+
+  .main-review .profile {
+    position: absolute;
+    top: 10px;
+    gap: 20px;
+  }
+  .main-review .profile .img-area {
+    height: 90px;
+    width: 90px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .main-review .profile .name-area span {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffffb4;
+    font-family: "Poppins", sans-serif;
+    padding-left: 5px;
+  }
+
+  .main-review .profile .name-area p {
+    margin: 0;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    background: #fffa65;
+    color: #030303;
+    padding: 1px 10px;
+    border-radius: 29px;
+  }
+  .main-review .text-review h3 {
+    font-size: 35px;
+    line-height: 45px;
+    position: absolute;
+    top: 70px;
+    max-width: 90%;
+  }
+
+  .swiper {
+    width: 250px;
+    height: 430px;
+  }
+
+  .video-revs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3rem;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial-section {
+    width: 75%;
+    margin: 40px auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .testimonial-section {
+    width: 72%;
+    margin: 40px auto;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .testimonial-section {
+    width: 68%;
+    margin: 40px auto;
+  }
+
+  .testimonial-section .testimonial-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .testimonial-section .testimonial-wrapper .main-review {
+    height: 30vh;
+    width: 100%;
+  }
+  .testimonial-section .testimonial-wrapper .video-revs {
+    width: 100% !important;
+  }
+
+  .main-review .profile {
+    position: absolute;
+    top: 10px;
+    gap: 20px;
+  }
+  .main-review .profile .img-area {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .main-review .profile .name-area span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffffb4;
+    font-family: "Poppins", sans-serif;
+    padding-left: 5px;
+  }
+
+  .main-review .profile .name-area p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    background: #fffa65;
+    color: #030303;
+    padding: 1px 5px;
+    border-radius: 29px;
+  }
+  .main-review .text-review h3 {
+    font-size: 24px;
+    line-height: 36px;
+    position: absolute;
+    top: 70px;
+    max-width: 90%;
+  }
+
+  .swiper {
+    width: 250px;
+    height: 430px;
+  }
+
+  .video-revs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
